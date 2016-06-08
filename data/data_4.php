@@ -80,7 +80,7 @@ $(document).ready(function(){
     }
 
 .chart div {
-    font: 20px sans-serif;
+    font: 15px sans-serif;
     
     text-align: right;
     padding: 3px;
