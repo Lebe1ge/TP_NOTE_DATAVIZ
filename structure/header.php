@@ -36,13 +36,13 @@
                 <nav>
                     <ul class="nav masthead-nav">
                         <li class="active"><a href="#">Pie</a></li>
-                        <li><a href="index.php?data=1">1</a></li>
-                        <li><a href="index.php?data=2">2</a></li>
-                        <li><a href="index.php?data=3">3</a></li>
-                        <li><a href="index.php?data=4">4</a></li>
-                        <li><a href="index.php?data=5">5</a></li>
-                        <li><a href="index.php?data=6">6</a></li>
-                        <li><a href="index.php?data=7">7</a></li>
+                        <li><a href="index.php?data=1&user=7">1</a></li>
+                        <li><a href="index.php?data=2&user=6">2</a></li>
+                        <li><a href="index.php?data=3&user=5">3</a></li>
+                        <li><a href="index.php?data=4&user=4">4</a></li>
+                        <li><a href="index.php?data=5&user=3">5</a></li>
+                        <li><a href="index.php?data=6&user=2">6</a></li>
+                        <li><a href="index.php?data=7&user=1">7</a></li>
                     </ul>
                 </nav>
             </div>
