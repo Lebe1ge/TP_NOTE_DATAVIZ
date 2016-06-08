@@ -17,15 +17,15 @@ $(document).ready(function(){
     function generateAxis(sId, data){
 
       console.log(data);
-      var plot1 = $.jqplot(sId, [data], {
-        title:'Default Date Axis',
-        axes:{
-            xaxis:{
-                renderer:$.jqplot.DateAxisRenderer
-            }
-        },
-        series:[{lineWidth:4, markerOptions:{style:'square'}}]
-      });
+      var plot3 = $.jqplot(sId, [data], {
+			    title:'Evolution de la popularité (notation) au fil du mois',
+			    axes:{
+				    xaxis:{
+				        renderer:$.jqplot.DateAxisRenderer
+				    }
+				},
+				series:[{lineWidth:4, markerOptions:{style:'none'}}]
+			});
     }
 
 

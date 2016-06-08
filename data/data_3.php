@@ -20,7 +20,7 @@ $(document).ready(function(){
 	{
         //console.log($.(data));
         //data = [4, 8, 15, 16, 23, 42];
-        
+
 		d3.select(idDiv)
             .selectAll("div")
             .data(d3.entries(data))
@@ -37,51 +37,51 @@ $(document).ready(function(){
                 }
             })
             .text(function(d) { return d.value + "% d'" + d.key; });
-        
-    
+
+
 	};
-    
+
     $.get('webservices/liste_amis_user.php?user=<?= $_GET['user']; ?>', function(data) {
         data = $.parseJSON(data);
-        
-            
+
+
         $.each(data, function(i, tab_relation) {
             tab_user.push(tab_relation[1]);
         });
         console.log(tab_user);
-        
+
         $.get('webservices/messages_user.php?user=<?= $_GET['user']; ?>', function(data_1) {
             data_1 = $.parseJSON(data_1);
-                    
+
             $.each(data_1, function(j, tab_message) {
                 if($.inArray(tab_message[1], tab_user) !== -1){
                     message.Amis++;
                 }else
                     message.Inconnue++;
             });
-            
+
             message.Amis = message.Amis/data_1.length*100;
             message.Inconnue = message.Inconnue/data_1.length*100;
-            
+
             generateBarChart('.chart', message);
         });
     });
-    
+
 });
 </script>
 <style>
-    
+
     .blue{
         background-color: steelblue;
     }
-    
+
     .pink{
         background-color: #f56c84;
     }
 
 .chart div {
     font: 15px sans-serif;
-    
+
     text-align: right;
     padding: 3px;
     margin: 20px 1px;

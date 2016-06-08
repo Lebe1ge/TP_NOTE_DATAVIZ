@@ -21,7 +21,6 @@ $(document).ready(function(){
 	function getRequest(url, callback) {
 		$.get(url, function(data) {
 			data = $.parseJSON(data);
-            console.log(data);
 		});
 	}
 
@@ -63,6 +62,10 @@ $(document).ready(function(){
           legend: {
               show: true,
               placement: 'outsideGrid'
+          },
+          highlighter: {
+            show: true,
+            sizeAdjust: 7.5,
           },
           axes: {
               // Use a category axis on the x axis and use our custom ticks.
@@ -127,37 +130,12 @@ $(document).ready(function(){
             amis.adulte3.Femme = amis.adulte3.Femme/data.length*100;
 
 
-            console.log(amis);
             generateBarChart('chart', amis);
         });
     });
 
 });
 </script>
-<style>
-
-    .blue{
-        background-color: steelblue;
-    }
-
-    .pink{
-        background-color: #f56c84;
-    }
-
-.chart div {
-    font: 20px sans-serif;
-
-    text-align: right;
-    padding: 3px;
-    margin: 20px 1px;
-    color: white;
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-}
-
-</style>
 
 <div class="inner cover">
     <h2>Répartition des amis par tranche d’âge (18-21, 22-25, 26-29) et par sexe</h2>
