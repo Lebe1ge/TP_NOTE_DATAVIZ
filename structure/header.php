@@ -16,6 +16,8 @@
         
         <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
         rel="stylesheet" type="text/css">
+
+        <script type="text/javascript" src="js/renderer/jqplot.dateAxisRenderer.js"></script>
 	</head>
 	<body>
 		
