@@ -14,36 +14,28 @@ $(document).ready(function(){
   		});
   	}
 
-    function generateAxis(sId){
-      var line1 =[['2008-06-30 8:00AM',4], ['2008-7-14 8:00AM',6.5], ['2008-7-28 8:00AM',5.7], ['2008-8-11 8:00AM',9], ['2008-8-25 8:00AM',8.2]];
-      var plot2 = $.jqplot(sId, [line1], {
-        title:'Customized Date Axis',
+    function generateAxis(sId, data){
+
+      console.log(data);
+      var plot1 = $.jqplot(sId, [data], {
+        title:'Default Date Axis',
         axes:{
-          xaxis:{
-            renderer:$.jqplot.DateAxisRenderer,
-            tickOptions:{formatString:'%b %#d, %#I %p'},
-            min:'June 16, 2008 8:00AM',
-            tickInterval:'2 weeks'
-          }
+            xaxis:{
+                renderer:$.jqplot.DateAxisRenderer
+            }
         },
         series:[{lineWidth:4, markerOptions:{style:'square'}}]
-    });
+      });
     }
 
-    generateAxis('popularite');
+
+
+    getRequest('webservices/popularite.php?user=<?= $_GET['user'] ?>', function(data) {
+      generateAxis('popularite', data);
+  	});
 });
 
 </script>
 <div class="inner cover">
-    <div id="popularite">
-      <div class="explication">
-        <h2>Explications :</h2>
-        <p>
-          Evolution de la popularité (notation) au fil du mois
-          (2 points, JQplot Date Axis, +1 point bonus si vous mettez
-          la courbe de ce graphique sur
-          le graphique au-dessus pour faire correspondre ces données)
-        </p>
-      </div>
-    </div>
+    <div id="popularite"></div>
 </div>
