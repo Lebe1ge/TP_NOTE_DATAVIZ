@@ -1,13 +1,11 @@
-
+            </div>
         </div>
     </div>
-</div>
         
         
-        <footer>
+    <footer>
 	
 	
-</footer>
-		<?php include ('structure/footer.php'); ?>
+    </footer>
 	</body>
 </html>
