@@ -12,7 +12,9 @@
         <!--<script src="js/bootstrap.min.js"></script>-->
 		<script type="text/javascript" src="js/jquery.jqplot.min.js"></script>
 		<script type="text/javascript" src="js/renderer/jqplot.dateAxisRenderer.js"></script>
-
+		<script type="text/javascript" src="js/renderer/jqplot.barRenderer.js"></script>
+		<script type="text/javascript" src="js/renderer/jqplot.categoryAxisRenderer.js"></script>
+		<script type="text/javascript" src="js/renderer/jqplot.pointLabels.js"></script>
 		<script type="text/javascript" src="js/dataviz.js"></script>
 
         <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
