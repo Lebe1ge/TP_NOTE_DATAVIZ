@@ -15,6 +15,7 @@
 		<script type="text/javascript" src="js/renderer/jqplot.barRenderer.js"></script>
 		<script type="text/javascript" src="js/renderer/jqplot.categoryAxisRenderer.js"></script>
 		<script type="text/javascript" src="js/renderer/jqplot.pointLabels.js"></script>
+        <script type="text/javascript" src="js/renderer/jqplot.pieRenderer.js"></script>
 		<script type="text/javascript" src="js/dataviz.js"></script>
 
         <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
@@ -42,7 +43,7 @@
                         <li><a href="index.php?data=2&user=6">2</a></li>
                         <li><a href="index.php?data=3&user=5">3</a></li>
                         <li><a href="index.php?data=4&user=4">4</a></li>
-                        <li><a href="index.php?data=5&user=3">5</a></li>
+                        <li><a href="index.php?data=5&user=39">5</a></li>
                         <li><a href="index.php?data=6&user=2">6</a></li>
                         <li><a href="index.php?data=7&user=1">7</a></li>
                     </ul>
