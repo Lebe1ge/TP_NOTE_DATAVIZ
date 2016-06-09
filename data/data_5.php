@@ -9,7 +9,7 @@
 </style>
 
 <div class="inner cover">
-    <h2>Question n°5</h2>
+    <h2>Question n°5 : notation des <span>filles</span></h2>
     <!-- PIE CHART -->
 	<div id="pie_chart"></div>
 
@@ -28,7 +28,14 @@
 
 		$('.btn').click(function(e){
 			e.preventDefault();
-			getNotation($(this).attr('data-sexe'));
+			sexe = $(this).attr('data-sexe');
+
+			if(sexe == 0){
+				$('h2 span').html('filles');
+			}else if(sexe == 1){
+				$('h2 span').html('garçons');
+			}
+			getNotation(sexe);
 		});
 	});
 
