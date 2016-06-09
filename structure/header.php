@@ -45,7 +45,7 @@
                         <li><a href="index.php?data=4&user=4">4</a></li>
                         <li><a href="index.php?data=5&user=39">5</a></li>
                         <li><a href="index.php?data=6&user=2">6</a></li>
-                        <li><a href="index.php?data=7&user=1">7</a></li>
+                        <li><a href="index.php?data=7&user=13">7</a></li>
                     </ul>
                 </nav>
             </div>
